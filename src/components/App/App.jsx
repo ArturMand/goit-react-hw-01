@@ -9,26 +9,25 @@ import friends from "../../data/friends.json";
 import transactions from "../../data/transactions.json";
 import Container from "./App.styled";
 
-const App = () => {
-  return (
-    <Container>
-      <Section title="User card">
-        <Profile
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          stats={user.stats}
-        />
-      </Section>
-      <Statistics title="Upload stats" stats={data} />
-      <Section title="Friends list">
-        <FriendList friends={friends} />
-      </Section>
-      <Section title="Transactions history">
-        <TransactionsHistory items={transactions} />
-      </Section>
-    </Container>
-  );
-};
+const App = () => (
+  <Container>
+    <Section title="User card">
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+    </Section>
+    <Statistics title="Upload stats" stats={data} />
+    <Section title="Friends list">
+      <FriendList friends={friends} />
+    </Section>
+    <Section title="Transactions history">
+      <TransactionsHistory items={transactions} />
+    </Section>
+  </Container>
+);
+
 export default App;
