@@ -1,13 +1,7 @@
-import Profile from "../Profile/Profile";
-import Statistics from "../Statistics/Statistics";
-import FriendList from "../FriendList/FriendList";
-import TransactionsHistory from "../TransactionsHistory/TransactionsHistory";
-import Section from "../Section/Section";
-import user from "../../data/user.json";
-import data from "../../data/data.json";
-import friends from "../../data/friends.json";
-import transactions from "../../data/transactions.json";
-import Container from "./App.styled";
+import { Profile, Statistics, FriendList, TransactionsHistory, Section } from './components/index';
+
+import { user, data, friends, transactions } from './data/index';
+import Container from './App.styled';
 
 const App = () => (
   <Container>
